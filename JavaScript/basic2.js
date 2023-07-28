@@ -130,7 +130,7 @@ console.log(person1.firstName, person1.lastName)
 // .objectassign ->
 const person3 = Object.assign({}, person1, person2)
 console.log(person3)
-
+console.log("Abhay")
 
 // 3. Object Constructor with function
 function Person(firstName, lastName, dob) {
@@ -173,7 +173,7 @@ console.log(mary.greeting())
 
 
 // 6. ES6 Classes
-class Person {
+class Person5 {
     constructor(firstName, lastName, dob) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -190,8 +190,14 @@ const p2 = new Person("John","Doe",'August 19, 1999');
 console.log(p2.getBirthYear())
 
 
+// Object De-Structure [Day3 || 28-07-2023]
 
+const obj={name:'john', age : '40'}; // object declaration
+// obj.name - Its old syntax
 
+const {name: n} = obj
+// console.log(name);
+console.log(n)
 
 
 

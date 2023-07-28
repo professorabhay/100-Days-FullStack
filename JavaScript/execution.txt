@@ -1,0 +1,34 @@
+JavaScript Execution Context 
+ 
+{code file} -> Global EC <- this
+Execute in thread && JS is single thread
+
+1 - Global EC || Environment
+2 - Function EC
+3 - Eval EC
+
+1st phase  - Memory Creation Phase or Creation Phase
+2nd phase  - Execution Phase
+
+
+let val = 10;
+
+In Memory Phase - > 
+val = undefined (1st cycle)
+
+In Execution Phase - >
+val <- 10
+
+Function make different Execution Phase and new variable environment  - > Execution thread
+Then it will create Memory and Execution Phase again but its inside the Function's memory.
+And after function Execution if value is returning then it will in the Global or Parent Execution context
+
+
+CALL STACK - > 
+three -> three -> three
+two ->  two - >
+one  -> one  -> 
+Global Execution Always present here !!!
+
+three remove first from stack then two then one 
+Its the concept on last in first out
