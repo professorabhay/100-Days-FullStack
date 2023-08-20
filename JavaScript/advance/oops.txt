@@ -1,0 +1,28 @@
+Does JavaScript has classes ?
+JavaScript is a prototype based language not object oriented
+
+Phele nahi hoti thi aur abhi bhi nahi hoti hae 
+
+But JS has prototype
+
+JavaScript has object - collection of properties and methods
+toLowerCase, promises type 
+
+Why use OOPs ?
+TO maintain the code 
+
+Parts of OOPs
+Object Literals 
+
+- Constructor function
+- prototype
+- classes
+- instances (new, this)
+
+// 4 pillars 
+Abstraction - Hide Details which not needed to user [fetch behind]
+Encapsulation - wrapper
+Inheritance 
+Polymorphism - many forms
+
+

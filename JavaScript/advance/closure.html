@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+<body style="background-color: rgb(29, 29, 29);">
+    <h2 style="color: rgb(165, 152, 135);">Lexical Variable Scoping</h2>
+    <button id="orange" style="color: orange; background-color: rgb(21, 20, 18);">Orange</button>
+    <button id="green" style="color: green; background-color: rgb(21, 20, 10);">Green</button>
+</body>
+<script>
+    function init(){
+        let name = "Google";
+        function displayName(){
+            console.log(name);
+        }
+        displayName();
+    }
+    init();
+
+    // Closure Example  =>
+
+    function makeFunc(){
+        const name = "Google"
+        function displayName(){
+            console.log(name);
+        }
+        return displayName; // While returning outer function also return that's why it work beacuse of lexical scope [not only executional context]
+    }
+    const myFunc = makeFunc(); // Function execution context remove after execution but due to lexical scope outer function is still exist 
+    myFunc();
+
+
+
+</script>
+<script>
+    // document.getElementById('orange').onclick = function(){
+    //     document.body.style.backgroundColor = 'darkorange'
+    // }
+    // document.getElementById('green').onclick = function(){
+    //     document.body.style.backgroundColor = 'darkgreen'
+    // } 
+    // But what if there is 100 buttons ? copy n paste - no 
+
+    function clickHandler(color){
+        // document.body.style.backgroundColor = `${color}`
+        return function(){
+            document.body.style.backgroundColor = `${color}`
+        }
+        // Now the code will work and its the example of closure. Full lexical scope returned with the main function value => [color]
+        // Use case in real world
+    }
+
+    document.getElementById('orange').onclick = clickHandler("orange") // Both will execute directly/autometically without clicking
+    document.getElementById('green').onclick = clickHandler("green")
+</script>
+</html>

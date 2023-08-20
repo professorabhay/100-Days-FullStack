@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amzing Images</h2>
+    <div>
+        <ul id="images">
+            <li><img width="200px" id="p1" src="/JavaScript/events/01 (1).jpg" alt="photoshop"></li>
+            <li><img width="200px" id="p2" src="/JavaScript/events/01 (2).jpg" alt=""></li>
+            <li><img width="200px" id="p3" src="/JavaScript/events/01 (3).jpg" alt=""></li>
+            <li><img width="200px" id="p4" src="/JavaScript/events/01 (4).jpg" alt=""></li>
+            <li><img width="200px"  id="p5" src="/JavaScript/events/01 (5).jpg" alt=""></li>
+            <li><a  style="color: bisque;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+    </div>
+</body>
+<script>
+    // document.getElementById('p2').onmouseenter = function(){
+    //     alert("Jai Shree Ram")
+    // }.
+
+    // document.getElementById('p2').addEventListener('mouseenter', function(){
+    //     alert("Jai Shree Ram")
+    // }) //default = flase [most cases we don't write but in interview some time you have to write [true alse exsist]]
+
+    //Bubbling Event
+    document.getElementById('images').addEventListener('click', function(e){console.log("clicked inside the ul");}, true)//false
+    document.getElementById('p1').addEventListener('click', function(e){
+        console.log("clicked p1");
+        e.stopPropagation;
+    }, true)//false
+
+    document.getElementById('google').addEventListener('click', function(e){
+        e.preventDefault()
+    })
+
+    // attachEvent(), jQuery - on [onclick]
+
+    document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e.target.parentNode);
+        if (e.target.tagName === 'IMG') {
+            let removeIt = e.target.parentNode
+            removeIt.remove()
+        }
+        // let removeIt = e.target.parentNode
+        // // removeIt.remove()
+        // removeIt.parentNode.removeChild(removeIt)
+    }, false)
+
+</script>
+</html>

@@ -116,3 +116,8 @@ function print(item){
 }
 
 coding.forEach(print)
+
+//Reduce in JavaScript
+let sum=0;
+sum+=123456789+1234567
+89 +123456789 ;

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async-1</title>
+</head>
+<body style="background-color: chocolate; color: antiquewhite;">
+    <h1 style="align-items: center; align-content: center;" >Abhay</h1>
+    <button style="position: relative; color: blueviolet;" id="stop">Stop</button>
+</body>
+<script>
+    // setTimeout(function(){
+    //     console.log("Abhay");
+    // }, 2000)
+
+    const sayName = function(){
+        console.log("Abhay");
+    }
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = "Arjun"
+    }
+    
+    const text = setTimeout(changeText, 2000)
+    setTimeout(sayName, 2000)
+    
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(text)
+        console.log("Stopped");
+    })
+</script>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en"> // 2 child - [head, body]
+<head>
+    <meta charset="UTF-8"> // Inside meta there is attribute.
+    
+    <title>DOM Learning</title>
+    <style>
+        .bg-black{
+            background: black;
+            color : white;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div>
+        <h1 id="tittle" class="heading">DOM Learning</h1> // Have 1 attribute and 1 text node
+        <p>Lorem ipsum dolor sit amet.</p> // Only text node
+    </div>
+
+    <div class="parent">
+    <div class="day">Monday</div>
+    <div class="day">Tuesday</div>
+    <div class="day">Wednesday</div>
+    <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    const parent =document.querySelector('.parent')
+    console.log(parent);
+    console.log(parent.children);
+    console.log(parent.children[1]);
+    console.log(parent.children[1].innerHTML);
+</script>
+</html>
+
+
+
+
+<!-- document.getElementById('tittle')
+document.getElementById('tittle').getAttribute('id')
+
+document.getElementsByClassName("heading") -->
+
+
+
