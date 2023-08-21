@@ -4,14 +4,14 @@
 ## Watch
 [Watch Folder](./Watch)
 - Description: Make a clock to understand the concept of Data/Time and also learnt some CSS tactics.
-- Live Project: [Watch Live Link](https://100-days-full-stack.vercel.app/)
+- Live Project: <a href="https://100-days-full-stack.vercel.app/" target="_blank">Watch</a>
 
-## Project B
-[Project B Folder](./B)
-- Description: This is a brief description of Project B.
-- Live Project: [Project B Live Link](URL_FOR_PROJECT_B_LIVE)
+## News
+[News Folder](./news-site)
+- Description: This is a brief description of News.
+- Live Project: <a href="URL_FOR_PROJECT_A_LIVE" target="_blank">News Live Link</a>
 
 ## Project C
 [Project C Folder](./C)
 - Description: This is a brief description of Project C.
-- Live Project: [Project C Live Link](URL_FOR_PROJECT_C_LIVE)
+- Live Project: <a href="URL_FOR_PROJECT_A_LIVE" target="_blank">Project C Live Link</a>
