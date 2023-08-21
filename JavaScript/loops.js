@@ -121,3 +121,4 @@ coding.forEach(print)
 let sum=0;
 sum+=123456789+1234567
 89 +123456789 ;
+console.log(sum);

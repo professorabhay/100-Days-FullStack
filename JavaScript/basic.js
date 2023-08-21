@@ -89,11 +89,14 @@ console.log("Hello World")
 // 4. Logical Operators -> &&, ||, !
 // 5. Bitwise Operators -> &, |, ^, ~, <<, >>
 
-// let num1 = 10
-// let num2 = 20
-// num1++   // incrementing the first operand before performing addition operation (Pre Increment Operator)
-// num2--   // decrementing the second operand before performing subtraction operation (Pre Decrement Operator)
-// console.log(num1 + num2)
+let num1 = 10
+let num2 = 20
+++num1   // incrementing the first operand before performing addition operation (Pre Increment Operator)
+--num2   // decrementing the second operand before performing subtraction operation (Pre Decrement Operator)
+console.log(num1 + " " + num2);
+console.log(++num1);
+console.log(num1++);
+console.log(num1 +" "+ num2 + ":" + (num1 + num2 ))
 
 // var num3 = 10
 // num3 = 11
@@ -109,8 +112,8 @@ console.log("Hello World")
 // let str2 ="abhay"
 // console.log(str1+str2)
 
-// console.log(10 + "20") // 1020
-// console.log(10 - "20") // -10
+console.log(10 + "20") // 1020
+console.log(10 - "20") // -10
 // console.log(10 + 20 + "30") // 3030
 // console.log("1" + 2 + 2) //122
 // console.log(3+4*5%3)
@@ -308,14 +311,14 @@ const dateObj = new Date(); // current time stamp object creation using the cons
 // console.log(dateObj.getSeconds());
 // console.log(typeof dateObj);
 
-let myDate = new Date(2023, 0, 23, 5, 3)
-let myDate1 = new Date("01-14-2023")
-console.log(myDate1.toLocaleString());
-console.log(Math.floor(Date.now()/1000));
+// let myDate = new Date(2023, 0, 23, 5, 3)
+// let myDate1 = new Date("01-14-2023")
+// console.log(myDate1.toLocaleString());
+// console.log(Math.floor(Date.now()/1000));
 
-myDate.toLocaleString('default', {
-    weekday: 'long'
-})
+// myDate.toLocaleString('default', {
+//     weekday: 'long'
+// })
 
 
 // Operations in JavaScript
