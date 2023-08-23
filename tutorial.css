@@ -1,0 +1,112 @@
+/* Linking => <link rel="stylesheet" href="style.css"> */ 
+
+/* Boiler Plate */
+/* Tag = directly  [h1, body, p] , ID = #[ax, abhay, rdm, anything] , CLASS = .[bdjcb, dced, anything] */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+/* Tag */
+
+h1{
+    width: 100%;
+    background-image: url(https://images.unsplash/);
+    background-size: cover; 
+    background-position: top;
+    /* This cover will help to make image in the dimension */
+    /* position above used to get the part of image */
+}
+
+/* Class */
+
+.button{
+    width: 100%;
+}
+
+/* ID */
+
+#button{
+    width: 100;
+}
+
+
+/* Height and Width  */
+
+/* #main{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+
+    making different by adjusting the percentage above 
+} */
+
+/* Units of measuring */
+
+/* px = pixels  Fixed value  */
+/* % = percentage */
+/* vh = viewport height */
+/* vw = viewport width */
+/* em = relative to the font-size of the element (2em means 2 times the size of the current font) */
+/* rem = relative to font-size of the root element */
+/* vmin = relative to 1% of viewport's smaller dimension */
+/* vmax = relative to 1% of viewport's larger dimension */
+
+/* Margin and Padding */
+
+/* Margin = outside the border */
+/* Padding = inside the border */
+
+/* Margin */
+/* Margin = all 4 sides - top, right, bottom, left margin = 0px 0px 0px 0px
+Margin-top
+Margin-right
+Margin-bottom
+Margin-left */
+
+/* Padding */
+/* Padding = all 4 sides - top, right, bottom, left padding = 0px 0px 0px 0px
+
+
+/* POSITION ABSOLUTE -  */
+/* Position by default is static */
+
+/* Suppose we have three elements -> h1, h2, h3
+When we use positio: absolute then that particulat elemnet got list and the place got empty
+then the elemnt before it can move to that place but we only see the elemnt lift above becuse the element move forward
+is just below the elemnt we lift 
+
+Remember => element lift in there particular layer, like 1 element = 1st layer && x element = x layer and ypu saw elemnt which is in higher layer 
+For eg => if we pset position- absoltue of above 3 
+
+h1 in layer 1
+h2 in layer 2
+h3 in layer 3
+
+then we say only h3
+if h2 lift then h1 move to place of h2 and we saw only h2 and h3 because h1 is just below the h2 */
+/* Absolute also perform relative property by dafault */
+
+
+
+/* POSITION RELATIVE */
+
+/* Suppose we have box A and B, when box b is put on the box a then it cant able to go outside because the boundary or edged of the box a 
+but when we make it absolute [box b] then it lift above, now it can cross the edges but what if we want that it not able to cross
+the edges after lift above also then we make the box a position relative [think we increase the boundary to infinit] and then b can not croos
+after becaoming abpsolute  */
+
+
+/* While display flex [to make items side wise] then we have 2 axis from up to down and left to right  */
+/* When working on height = justify ::content */
+/* and on width - justify content */
+
+
+/* ZIndex used to take element behind */
