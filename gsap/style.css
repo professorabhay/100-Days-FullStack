@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav{
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    padding: 0 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav>h1{
+    font-size: 25px;
+    font-weight: 100;
+}
+
+#nav #part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav #part2 a{
+    text-decoration: none;
+    color: rgb(17, 14, 14);
+    font-size: 15px;
+    margin: 20px;
+}
+
+#nav #part2 a:nth-last-child(1){
+    position: relative;
+    padding: 7px 18px;
+    border-radius: 50px;
+    border: 1px solid rgb(15, 14, 14);
+    overflow: hidden;
+}
+
+#nav #part2 a:nth-last-child(1) #green{
+    width: 100%;
+    height: 100%;
+    background-color: springgreen;
+    position: absolute;
+    top: 0%;
+    left: -100%;
+    transition: left 0.4s ease;
+}
+#nav #part2 a:nth-last-child(1) h5{
+    font-weight: 100;
+    position: relative;
+    z-index: 99;
+}
+#nav #part2 a:nth-last-child(1):hover #green{
+    left: 0;
+}
+
+#main>h1{
+    font-size: 5.6vw;
+    width: 50%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: rgb(16, 57, 128);
+    font-weight: 100;
+    position: relative;
+    text-transform: capitalize;
+    z-index: 99;
+}
+
+#main>h1::after{
+    content: "";
+    position: absolute;
+    width: 35%;
+    height: 16px;
+    background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+    bottom: -11%;
+    background-size: cover;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+}
+
+#main #img1{
+    height: 300px;
+    width: 290px;
+    position: absolute;
+    left: 7%;
+    top: 20%;
+}
+
+#main #img2{
+    height: 240px;
+    width: 170px;
+    position: absolute;
+    right: 25%;
+    top: 18%;
+}
+
+#main #img3{
+    height: 220px;
+    width: 210px;
+    position: absolute;
+    right: 11%;
+    bottom: 6%;
+}
+
+#main img{
+    transition: margin 0.8s ease;
+}
+
+#main img:hover{
+    margin-top: -20px;
+}
