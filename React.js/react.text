@@ -1,0 +1,132 @@
+REACT BASICS 
+
+Made by facebook 
+Highly use
+
+Features - 
+JSX, Simplicity, Virtual DOM, One-way binding, Components, Performance
+JSX => JS + HTML
+
+How It Works -
+1. React creates a virtual DOM tree from the JSX code
+and renders it to the screen using ReactDOM library
+2. When user interacts with the app (clicking on buttons),
+the event is captured and propagated through the component hierarchy until reaching the root node of our application.
+the state of the application changes and triggers re-rendering process
+3. The new version of the virtual DOM is compared against previous one
+in order to find out what has changed since last time
+and only update those parts that have been modified
+
+
+Components -> Header, Menu, Middle Article, Footer
+Then directly make changes in components and that component page render only not the whole main page
+
+
+Rendering Dom =>
+
+Virtual DOM  <= Actual DOM
+
+In VDOM, we can change without .Document
+while sending page to browser, react create a dom virtually and marks all components
+as real dom elements. While makinf change, first it change element in virtual dom and then render it.
+
+
+Steps -> 
+Downlaod node.js and npm [node package manager]
+npm install --global npx
+npx create-react-app my-first-app
+cd my-first-app/
+code .
+
+create rect app is old way and bulky, takes so much time. 
+We use VITE in new era ->
+
+1- npm create vite@latest = It dont't give node module folder 
+2- cd <project name>
+3- npm  install 
+4- npm run dev 
+
+
+
+package.json => hold dependencies
+
+package-lock-json => 
+
+node modules has all library
+
+public  => Index.html or main file folder 
+This is the main page and here all page come 
+
+manifest.json = used to make prgressive web app
+means add to home screen Features
+
+src is where we write code
+index.js is do rendering and send to main index.HTML
+app.js is a components and can use multiple times
+
+Components -> 
+Independent and reusable bits of code
+It is JS file
+same purpose as JS function
+But works in isolation and return HTML via render function
+
+Types of components ->
+
+Class Based and Functional Based
+
+Class Based -> Class of ES6 or concept of class in JS and we mmanage a state in this.
+Means store the data in it and recieve props [properties] and give JSX [JS + HTML]
+
+It inherit from the component function, so need to use extend class
+
+Functional -> Function based, like a function doing a task same in js.
+It doesnot inherit from class 
+
+JSX 
+
+Extension to JS syntax
+JSX = JS +XML
+Not necessary to write JSX to render html tags
+React.createElement() method can be used
+syntax -> 
+React.createElement(
+    "parent-node",
+    optional properties,
+    "child node"
+);
+
+
+Props => Props are object
+React is a component based library which divides the UI into little reusable pieces.
+In case, those component need to communicate(send data to each other) and the way to pass data b/w component is by using props.
+"props" is a special keyword in React, which stands for properties and its being used for passing data from one component to another.
+But the imp part is that data passed in uni directional flow (one way from pat=rent to child)
+Child cannot chnage the data, only parent can.
+
+
+State => 
+In build object of react component [class based]
+State object is used to store all data that belongs to that particular componenet only
+accessible inside the component
+state is mutable 
+object state chnage => component re-render
+to use state in class = "this.state"
+in functional component => "useState" hook is used
+
+
+Event Handling =>
+buttonClickhandler = () => {
+      alert("hello")
+      console.log(this.state);
+      console.log(this.props);
+  } // arrow function not re bind the this 
+
+  What if we make direct function  = 
+  buttonClickhandler() {
+      alert("hello")
+      console.log(this.state);
+      console.log(this.props);
+  }  // then it will give error because it rebind the "this" and its not accessible 
+
+
+
