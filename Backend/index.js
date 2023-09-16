@@ -9,6 +9,9 @@
 
 import http from "http";
 import fs from "fs"
+import path from 'path'
+
+console.log(path.extname("./home/random/index.js"));
 
 
 
