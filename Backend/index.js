@@ -1,58 +1,42 @@
-// console.log("Hello World");
-// console.log("Abhay");
+// Express - JS 
 
+import express from 'express' ;
+import path from 'path';
 
-// import old method -> 
-// const http = require("http");
+// const server = express ();
+const app = express();
 
-// Importing via new method, but make sure to change type: module, in p.json
+// express.static(path.join(path.resolve(), "public"));
+app.use(express.static(path.join(path.resolve(), "public")));
 
-import http from "http";
-import fs from "fs"
-import path from 'path'
-
-console.log(path.extname("./home/random/index.js"));
-
-
-
-// Importing File based module via old method 
-// const gfName = require("./features");
-import gfName, {percentage} from "./features.js";
-console.log(gfName);
-console.log(percentage());
-
-// Creating Server -> 
-
-const server = http.createServer((req,res)=>{
-    //Setting Route ->
-
-    if(req.url === "/about"){
-        res.end("About")
-    }
-    else if(req.url === "/"){
-        // res.end("<h1>Home</h1>")
-        fs.readFile("./index.html", (err, home)=>{
-            res.end(home);
-        })
-    }
-    else if(req.url === "/txt"){
-        fs.readFile("./backend.txt", (err, txt)=>{
-            res.end(txt);
-        })
-    }
-    else if(req.url === "/love"){
-        res.end(`Love is ${percentage()}`)
-    }
-    else{
-        res.end("Page Not Found")
-    }
-});
-
-server.listen(5000,()=>{
-    console.log("Server");
+app.get("/getproducts", (req, res)=>{
+    // res.send("Hello World");
+    // res.sendStatus(404);
+    // res.sendStatus(200);
+    res.json({
+        sucess:true,
+        product:[{
+            name:"iphone",
+            price : 1598 ,
+        },
+        {   name:'mac',
+            price:3678,
+        }]
+    })
 })
 
+app.get('/404', (req, res) => {
+    res.status(400).send('hello world');
+})
 
+app.set("view engine", "ejs");
 
+app.get('/', (req, res)=> {
+    // const pathlocation = path.resolve();
+    // res.sendFile(path.join(pathlocation, "./index.html"));
+    res.render("index", {name: "Abhay"});
+})
 
-
+app.listen(5000, ()=>{
+    console.log("Server is working");
+});

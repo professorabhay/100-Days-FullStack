@@ -11,3 +11,5 @@ Everything is module
 1 - built-in
 2 - File-Based
 3 - 3rd Party Module
+
+"type": "module", //commonjs
