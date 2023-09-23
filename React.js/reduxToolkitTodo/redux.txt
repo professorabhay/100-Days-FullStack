@@ -1,0 +1,31 @@
+
+
+Redux is a ? 
+- A predictable state container for JavaScript apps. [preserve state]
+
+Reducx is a core library and React-redux is implementation of redux in react to communicate (wiring)
+
+Redux Dev Tools - Extension 
+
+Start -> 
+
+1- Make Store [only 1, single source of truth].
+2- Create Reducers. [initial stage, define , reducres making] [state -> update store values][action -> action.payload]
+Exporting [if you have 10 Reducers than we export all of them by one-one ]
+Also export the whole file onces
+
+useSelector -> 
+2- Selectors are functions that take store as an argument and return some data from it
+3- useSelector(state => state.counter); // returns counter value
+4- mapStateToProps = () => {return{count:store.getState().counter}}
+5- Connect Component with Redux using connect() function
+
+useDispatch -> 
+6- Dispatch action creators to update the state
+7- useDispatch();
+8- dispatch({type:'INCREMENT'})
+9- mapDispatchToProps = (dispatch)=>{   
+    return{
+        increment : ()=>dispatch({ type:"INCREMENT"}),
+    }}
+
