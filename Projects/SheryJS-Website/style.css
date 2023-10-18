@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "gilroy";
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+}
+
+#back {
+    width: 100%;
+    height: 100vh;
+}
+
+#back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#top {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+#workingarea {
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1920px;
+    height: 100vh;
+}
+
+#nav{
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#nav img{
+    color: aliceblue;
+    height: 60px;
+}
+
+#nleft, #nright {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+#nav a{
+    pointer-events: all;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+} 
+
+#hero{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50% );
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* height: 100px; */
+}
+
+#heroleft {
+    min-width: 50%;
+    /* height: 100px; */
+    /* background-color: pink; */
+}
+
+#heroleft button{
+    pointer-events: all;
+    padding: .8vw, 3vw;
+    font-family: "kajiro";
+    font-size: 3vw;
+    margin-top: 2vw;
+    font-weight: 200;
+}
+
+#heroleft .elem{
+    position: relative;
+    height: 9vw;
+    overflow: hidden;
+}
+
+#heroleft .elem h1:nth-child(1){
+    top: 0;
+}
+
+#heroleft .elem h1{
+    position: absolute;
+    top: 100%;
+    line-height: .9;
+    font-family: "kajiro";
+    color: white;
+    font-weight: 100;
+    font-size: 12vw;
+
+}
+
+#heroright {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 25%;
+    color: white;
+}
+
+#heroright p{
+    font-size: 14px;
+    font-weight: 300;
+    text-align: right;
+}
+
+#heroright #imagediv{
+    width: 100%;
+    height: 170px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-image: url(./Assets/portrait.png);
+    background-size: cover;
+}
+
+#heroright p:nth-child(3){
+    margin-bottom: 100px;
+}
