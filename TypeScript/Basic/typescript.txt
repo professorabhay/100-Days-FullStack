@@ -1,0 +1,36 @@
+Type Safety -> 
+
+It detect error in the code before running the code while js detect that errors during run time. 
+
+Static Checking 
+
+.ts || .tsx --> extension
+
+TS -> JS [compiled internally]
+
+TS is development tool ! 
+TS is just a superset of JS [wrapper]
+
+TS has 2 different type of installation. In project we need to configure a ts config file. 
+
+tsc -v => Version x.x.x
+D:\courses\Typescript>tsc intro.ts
+
+Types -
+
+new types in ts - Any, Never, unknown, void, undefined, null
+
+
+for production level  - > 
+
+1st command -> tsc --init [to make config file]
+
+npm init -y [it create a package,json file]
+just for info
+
+
+We need to make a dist folder [known for production or serving or final] and in this we will create the index.js from our index.ts.
+so to do so we have to modify ts config file (// "outDir": "./", )
+location of output directory ["outDir": "./dist",]
+Now, remember that when you compile manually like tsc index.js it won't look for config means it generate the compiled js file in same dir but when you use tsc -w then its start a watch mode [quite similar to nodemon ]  and compile as pper config file 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
