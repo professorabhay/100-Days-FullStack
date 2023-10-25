@@ -10,3 +10,8 @@
 /Backend/node_modules
 Projects/Appwrite - Project/BlogSlog/.env
 Projects/amazon-clone/src/firebase.js
+Projects/amazon-clone/src/Checkout.css
+Projects/amazon-clone/src/Checkout.js
+Projects/amazon-clone/src/StateProvider.js
+Projects/amazon-clone/src/Subtotal.css
+Projects/amazon-clone/src/Subtotal.js
