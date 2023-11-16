@@ -17,6 +17,7 @@
   
   .subtotal__gift > input {
     margin-right: 5px;
+    cursor: pointer;
   }
   
   .subtotal > button {
@@ -28,5 +29,6 @@
     margin-top: 10px;
     border-color: #a88734 #9c7e31 #846a29;
     color: #111;
+    cursor: pointer;
   }
   
