@@ -1,0 +1,85 @@
+Problem in ReactJS || Why we need NextJS -> 
+
+React -> State, Effect, API -> BUILD -> .JS [bundle]
+
+When a user/client came to your website then ->
+
+Waiting time [to load the bundle] ->  [useEffect Run] -> All API calls -> [useState] 
+then the app loads and ready for client but the time it tooks it's not good for UX 
+
+In nextJs, data fetched on build time and then make HTML, CSS and then we deplaoy it on server and then html, css load and its so fast.
+Immediately shows data.
+
+
+SEO -> React has so low but next js has high score. 
+
+Nextjs have built in react router for multiple page, dynamic routing and so on. 
+
+Next js also give option to choose SSR and CSR.
+
+React use webpack for bundling but next use rust.
+
+isr -> means build api calls on time interval - ftech api extends
+
+
+// Setting a Project -> 
+
+Node should installed then -> 
+
+npx create-next-app@latest
+npm run dev
+
+folder structure-> 
+
+build goes in .next folder 
+pages  
+public folder for -> assets also
+styles for styles
+next js config for next related modules, packages 
+
+default page - 
+[page, layout, loading, error, not-found].js
+
+codesplitting is automatic
+
+
+routing -> tree like [only folder]
+
+
+dynamic routing -> app/product/[id]/page.jsx
+this id folder is dynamic 
+
+to access that id or anything -> 
+const page = ({params}) => {
+    console.log(params)
+}
+
+
+by default all are derver side by can be cs -> "use client";
+
+But when to use which !
+
+console.log() in browser also
+to use hooks 
+
+to use event listene
+for hooks and custom hooks
+for browser api's
+
+
+right components rendering 
+
+server side component in client side component -> use not directly instead use children method
+
+Just like in app folder routing haapens  with folder names but in pages/api routing happens on the basis of file name 
+important modules ->
+
+Data Fetching Fundamental -> 
+
+dynamic data -> fetch on everyrequest [ssr]
+static -> once fetch [ssg - static site generation] => Caching data through cdn for fast response, done by hosting provider [vercel]
+isr -> means build api calls on time interval - ftech api extends
+
+ISR -> Impremental revalidation
+
+on demand revalidation
