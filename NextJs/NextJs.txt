@@ -80,6 +80,6 @@ dynamic data -> fetch on everyrequest [ssr]
 static -> once fetch [ssg - static site generation] => Caching data through cdn for fast response, done by hosting provider [vercel]
 isr -> means build api calls on time interval - ftech api extends
 
-ISR -> Impremental revalidation
-
+ISR -> Incremental Static Regeneration
+SPA -> Single Page APP 
 on demand revalidation
