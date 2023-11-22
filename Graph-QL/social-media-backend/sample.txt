@@ -1,0 +1,1 @@
+Prisma Migrate Command -  npx prisma migrate dev --name create_users_table
