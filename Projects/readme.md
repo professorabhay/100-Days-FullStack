@@ -3,8 +3,8 @@
 
 ## Watch
 [Watch Folder](./Watch)
-- Description: Make a clock to understand the concept of Data/Time and also learnt some CSS tactics.
 - Live Project: <a href="https://100-days-full-stack.vercel.app/" target="_blank">Watch</a>
+![image](https://github.com/professorabhay/100-Days-FullStack/assets/76243309/e689b0dd-58c2-4fc7-828f-9d6b5e74e444)
 
 ## News
 [News Folder](./news-site)
