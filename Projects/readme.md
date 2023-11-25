@@ -10,8 +10,3 @@
 [News Folder](./news-site)
 - Description: This is a brief description of News.
 - Live Project: <a href="URL_FOR_PROJECT_A_LIVE" target="_blank">News Live Link</a>
-
-## Project C
-[Project C Folder](./C)
-- Description: This is a brief description of Project C.
-- Live Project: <a href="URL_FOR_PROJECT_A_LIVE" target="_blank">Project C Live Link</a>
