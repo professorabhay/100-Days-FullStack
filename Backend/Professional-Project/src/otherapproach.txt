@@ -1,0 +1,44 @@
+Index.js file root dir -> 
+
+We can write something like that also. Way of defining all in the one file.
+----------------------------------------------------------------------------------------------------
+import mongoose from 'mongoose';
+import {DB_NAME} from './constants'
+
+import express from 'express'
+const app = express() 
+
+;(async() => {
+    try {
+        await mongoose.connect(`${process.env.MONGODB_URI}/${DB_NAME}`)
+        app.on("error", (error)=> {
+            console.log("ERROR: ", error)
+            throw error
+        })
+        
+        app.listen(process.env.PORT, () => {
+            console.log(`App is listening on PORT ${process.env.PORT}`)
+        })
+    } catch (error) {
+        console.log("ERROR: ", error)
+        throw error
+    }
+})() //iife function
+----------------------------------------------------------------------------------------------------
+
+Always keep in mind that while making connection with DB you should wrap all things in try catch block and use async await. 
+
+
+Experimental Feature - 
+ "scripts": {
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
+  },
+
+For ES6 import -  "type": "module"
+
+In main Index.js file you should load env variable. 
+So, that it will available for all asa appliaction loaded. 
+
+1st approach - require('dotenv').config({path: './env'}) 
+
+2nd approach - Used in code

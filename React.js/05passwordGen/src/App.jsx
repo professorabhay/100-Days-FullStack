@@ -26,7 +26,7 @@ function App() {
 
 
   }, [length, numberAllowed, charAllowed, setPassword])
-
+// Ye inke change hone pe optimize krega [cache mae store krna type scene]
   const copyPasswordToClipboard = useCallback(() => {
     passwordRef.current?.select();
     passwordRef.current?.setSelectionRange(0, 999);
@@ -36,6 +36,7 @@ function App() {
   useEffect(() => {
     passwordGenerator()
   }, [length, numberAllowed, charAllowed, passwordGenerator])
+  // Ye dependency ke change hone mae function ko re run krega 
   return (
     
     <div className="w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-3 my-8 bg-gray-800 text-orange-500">

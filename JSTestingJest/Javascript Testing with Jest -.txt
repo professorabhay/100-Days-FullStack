@@ -1,0 +1,32 @@
+Javascript Testing with Jest -
+
+npm init -y  [To initialize project]
+
+npm install --save-dev jest [Jest Installation as a dev dependency]
+
+Modify package.json to run jest 
+
+Modify -> 
+
+    "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+     },
+
+     test -> jest
+
+    "scripts": {
+    "jest": "echo \"Error: no test specified\" && exit 1"
+     },
+
+     but the correct is -> 
+
+    "scripts": {
+    "test": "jest"
+     },
+
+
+Unit Test -> Its the process of checking small block of test.
+
+To Run the test -> npm test  
+
+

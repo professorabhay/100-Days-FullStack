@@ -7,7 +7,15 @@ function App() {
 
   const addValue = () => {
     // counter += 1;
-    setCounter(counter + 1)
+    // setCounter(counter + 1)
+    // setCounter(counter + 1)
+    // setCounter(counter + 1)
+    // setCounter(counter + 1)
+
+    setCounter(prevCounter => prevCounter + 1)
+    setCounter(prevCounter => prevCounter + 1)
+    setCounter(prevCounter => prevCounter + 1)
+    setCounter(prevCounter => prevCounter + 1) 
     // console.log("Clicked", Math.random());
     // console.log(counter);
   }
@@ -29,6 +37,9 @@ function App() {
       <button onClick={addValue}>Add Value</button>
       <br/>
       <button onClick={decValue}>Remove Value</button>
+      <div>
+        This is the interview question solution. In react all similiar or common or same task happening multiple times is treat as a bundle. So, the counter which is comment will treat as one because all doing same tash but using prevCounter we said to update its previous value.
+      </div>
     </>
   )
 }

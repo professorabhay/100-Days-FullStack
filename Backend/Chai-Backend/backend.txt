@@ -1,0 +1,21 @@
+// We have to run the file again and again and this is wierd, so we use nodemon -> 
+// Globally install once -> npm i -g nodemon
+// To start -> nodemon filename
+
+(req,res) 
+
+Whether you change the position but first always be request and second is reponse
+
+Module -> 
+Everything is module 
+1 - built-in
+2 - File-Based
+3 - 3rd Party Module
+
+"type": "module", //commonjs
+
+
+// We store buffer type data like pdf, images in other 3rd part services like AWS Bucket, Cloud Marry, etc. These Services give Public URL and we handle it and style it 
+
+
+.gitkeep is a n empy git file tp push empty folder
